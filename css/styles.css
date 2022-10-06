@@ -304,6 +304,45 @@ header {
     justify-content: space-between;
 }
 
+.doing-item {
+    position: relative;
+}
+
+.doing-item::after {
+    content: '';
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-opposit);
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 70px;
+    align-items: center;
+}
+
+.doing-item:nth-child(1)::after {
+    content: 'Десктопні додатки';
+}
+
+.doing-item:nth-child(2)::after {
+    content: 'Мобільні додатки';
+}
+
+.doing-item:nth-child(3)::after {
+    content: 'Дизайнерські рішення';
+}
+
 /* --------- СТУДІЯ Наша команда -------------------- */
 .team {
     background-color: var(--secondary-background-color-next);
